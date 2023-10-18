@@ -57,22 +57,15 @@ const Chat = () => {
                       <img src={user} className="w-12 h-12 ml-2 rounded-full" />
                     </div>
                   ) : message.role === "assistant" ? (
-                    message.content.includes("|") ? (
-                      <OptionBooks
-                        bot={bot}
-                        message={message}
-                        length={messages.length - 1}
-                        index={index}
+
+                    <div className="flex items-center justify-center p-4 font-semibold shadow-sm rounded-2xl bg-red bg-opacity-20 drop-shadow shadow-red ">
+                      <img
+                        src={bot}
+                        className="w-12 h-12 mr-2 rounded-full"
                       />
-                    ) : (
-                      <div className="flex items-center justify-center p-4 font-semibold shadow-sm rounded-2xl bg-red bg-opacity-20 drop-shadow shadow-red ">
-                        <img
-                          src={bot}
-                          className="w-12 h-12 mr-2 rounded-full"
-                        />
-                        {message.content}
-                      </div>
-                    )
+                      {message.content}
+                    </div>
+
                   ) : null}
                 </div>
               </div>
