@@ -5,7 +5,6 @@ import Main from '@components/Main';
 import { ThemeProvider } from "next-themes";
 
 function MyApp() {
-  // const initialState = useInitialState();
   return (
     <>
       <ThemeProvider attribute='class'>
