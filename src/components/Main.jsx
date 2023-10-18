@@ -1,9 +1,6 @@
 import React from 'react';
 import Footer from "./Footer";
 import Chat from "./Chat";
-// import ReactFullpage from '@fullpage/react-fullpage';
-const bg =
-    "https://drive.google.com/uc?export=download&id=1SP9wLCdgy12qBt1yIhyvLEtdHgxJJOEj";
 
 const Main = () => {
 
