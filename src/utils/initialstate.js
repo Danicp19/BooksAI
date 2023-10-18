@@ -17,7 +17,7 @@ const initialstate = [
       what language does he/she prefere to read the book\
       does he prefer a particular writer \
       if the user ask for a special writer be SURE that the books that you recomend ARE written by that writer \
-           when the user is satisfy with the books, ask the user if you can assist with anything else. if the user responds no, just say goodbye in a friendly way.\
+     when the user is satisfy with the books, ask the user if you can assist with anything else. if the user responds no, just say goodbye in a friendly way.\
       if the user asks for a book that is porno or an ilegal content just respond that this app has not information of such things, that please ask for another content",
     },
     {
