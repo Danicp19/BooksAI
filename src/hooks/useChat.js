@@ -32,7 +32,7 @@ export const useChat = () => {
       ...chatHistory,
       {
         role: "assistant",
-        content: data,
+        content: data.choices[0].message.content,
       },
     ]);
   });
