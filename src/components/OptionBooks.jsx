@@ -23,9 +23,7 @@ const OptionBooks = ({ bot, message }) => {
                                 <tr className="bg-lightred">
                                     <th className="px-2">Name</th>
                                     <th className="px-2">Description</th>
-                                    {/* <th className="px-2">Duration</th> */}
                                     <th className="px-2">Language</th>
-                                    {/* <th className="px-2">Image</th> */}
                                 </tr>
                             </thead>
                             <tbody>
@@ -33,16 +31,7 @@ const OptionBooks = ({ bot, message }) => {
                                     <tr key={book.name}>
                                         <td className="p-2 text-xl">{book.name}</td>
                                         <td className="p-2 px-4">{book.description}</td>
-                                        {/* <td className="p-2">{movie.duration}</td> */}
                                         <td className="p-2">{book.language}</td>
-                                        {/* <td>
-                      <img
-                        src={movie.imageLink}
-                        alt={movie.name}
-                        height={100}
-                        width={100}
-                      />
-                    </td> */}
                                     </tr>
                                 ))}
                             </tbody>
@@ -60,7 +49,6 @@ const OptionBooks = ({ bot, message }) => {
                                 <div key={book.name}>
                                     <h1 className="p-2 text-xl">{book.name}</h1>
                                     <p className="p-2 px-4">description: {book.description}</p>
-                                    {/* <p className="p-2">duration: {book.duration}</p> */}
                                     <p className="p-2">language: {book.language}</p>
                                     <hr />
                                 </div>
