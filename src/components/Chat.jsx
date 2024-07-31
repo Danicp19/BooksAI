@@ -1,12 +1,11 @@
 import React from "react";
 import OptionBooks from "./OptionBooks";
 import { useChat } from "@hooks/useChat";
-const logo =
-  "https://drive.google.com/uc?export=download&id=1FVwxbm9x3E9OdFsxzs2LQVLQi4zNjqJK";
-const bot =
-  "https://drive.google.com/uc?export=download&id=1I2uDYs87s4a2YwCW8wS-rVX1LVUvwjWZ";
-const user =
-  "https://drive.google.com/uc?export=download&id=1uD99xnEIpOZb0DA-gWNVOMi-lAYguVpg";
+import Image from "next/image";
+import logo from '@icons/logo.png';
+import user from '@icons/user.png';
+import bot from '@icons/bot.png';
+
 
 const Chat = () => {
   const {
@@ -21,7 +20,8 @@ const Chat = () => {
   } = useChat();
   return (
     <div className="z-20 flex flex-col items-center justify-center w-full h-full p-6 mx-2 shadow-lg lg:mx-0 lg:w-3/5 bg-lightred rounded-3xl drop-shadow-sm shadow-gray-600">
-      <img
+      <Image
+        alt={"logo"}
         height={140}
         width={140}
         src={logo}
@@ -54,12 +54,13 @@ const Chat = () => {
                   {message.role === "user" ? (
                     <div className="flex items-center justify-center p-4 font-semibold shadow-sm rounded-2xl bg-grayblue bg-opacity-30 drop-shadow shadow-grayblue ">
                       {message.content}
-                      <img src={user} className="w-12 h-12 ml-2 rounded-full" />
+                      <Image  alt={"user"} src={user} className="w-12 h-12 ml-2 rounded-full" />
                     </div>
                   ) : message.role === "assistant" ? (
 
                     <div className="flex items-center justify-center p-4 font-semibold shadow-sm rounded-2xl bg-red bg-opacity-20 drop-shadow shadow-red ">
-                      <img
+                      <Image
+                        alt={"bot"}
                         src={bot}
                         className="w-12 h-12 mr-2 rounded-full"
                       />
@@ -78,7 +79,7 @@ const Chat = () => {
                  mb-4 rounded-md bg-primary text-richblack px-4 py-2  `}
                 >
                   <div className="flex items-center justify-center p-4 font-semibold shadow-sm rounded-2xl bg-red bg-opacity-20 drop-shadow shadow-grayblue animate-pulse ">
-                    <img src={bot} className="w-12 h-12 mr-2 rounded-full" />
+                    <Image  alt={"bot"} src={bot} className="w-12 h-12 mr-2 rounded-full" />
                     Thinking ...
                   </div>
                 </div>
